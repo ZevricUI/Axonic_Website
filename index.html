@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#05070d">
+  <meta name="description" content="Axonic Hub — Roblox scripts, loadstrings and premium access.">
+  <title>Axonic Hub — Scripts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow glow-one"></div><div class="bg-glow glow-two"></div>
+  <header class="nav">
+    <a class="brand" href="#home">
+      <img src="assets/logo.png" alt="Axonic Hub logo">
+      <span>AXONIC <b>HUB</b></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#scripts">Scripts</a>
+      <a href="#premium">Premium</a>
+      <a class="discord-link" href="https://discord.gg/axonic" target="_blank" rel="noopener">Discord ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="pill">⚡ AXONIC HUB • SCRIPT HUB</div>
+        <h1>Your games.<br><span>Your scripts.</span><br>One hub.</h1>
+        <p>Browse the Axonic Hub library, copy your loadstring and get back into your game in seconds.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#scripts">Explore Scripts <span>→</span></a>
+          <a class="btn ghost" href="https://discord.gg/axonic" target="_blank" rel="noopener">Join Discord</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-logo-ring"><img src="assets/logo.png" alt=""></div>
+        <div><strong>Axonic Hub</strong><span>Scripts • Support • Premium</span></div>
+        <div class="hero-stat"><b id="heroCount">20+</b><small>Scripts</small></div>
+      </div>
+    </section>
+
+    <section class="section" id="scripts">
+      <div class="section-head">
+        <div><div class="eyebrow">SCRIPT LIBRARY</div><h2>Choose your game</h2><p>Copy the loadstring directly from the card.</p></div>
+        <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Search games..."></div>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="Working">Working</button>
+        <button class="filter" data-filter="new">Latest</button>
+      </div>
+      <div class="script-grid" id="scriptGrid"></div>
+      <div class="empty" id="empty" hidden>No scripts matched your search.</div>
+    </section>
+
+    <section class="premium" id="premium">
+      <div class="premium-inner">
+        <div>
+          <div class="eyebrow">AXONIC PREMIUM</div>
+          <h2>Want premium access?</h2>
+          <p>Open a ticket in the Axonic Hub Discord to purchase premium. We may also run special offers in the server.</p>
+          <a class="btn primary" href="https://discord.gg/axonic" target="_blank" rel="noopener">Open Discord Ticket →</a>
+        </div>
+        <div class="price-grid">
+          <div class="price-card"><span>MONTHLY</span><strong>$4.99</strong><small>per month</small></div>
+          <div class="price-card featured"><i>POPULAR</i><span>LIFETIME</span><strong>$9.99</strong><small>one-time</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="discord-banner">
+      <div class="discord-icon">◈</div>
+      <div><strong>Stay connected with Axonic Hub</strong><span>Updates, support, offers and announcements.</span></div>
+      <a href="https://discord.gg/axonic" target="_blank" rel="noopener">Join Discord ↗</a>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> Axonic Hub</span><span>Scripts • Support • More</span></footer>
+  <div class="toast" id="toast">Loadstring copied!</div>
+  <script src="scripts.js"></script>
+</body>
+</html>
